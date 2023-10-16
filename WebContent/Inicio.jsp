@@ -8,8 +8,8 @@
 </head>
 <body>
 	<a href="Inicio.jsp">Inicio</a>
-	<a href="AgregarSeguro.jsp">Agregar seguro</a>
-	<a href="ListarSeguro.jsp">Listar seguros</a>
+	<a href="AgregarSeguroServlet?opt=1">Agregar seguro</a>
+	<a href="ListarSeguroServlet?list=1">Listar seguros</a>
 
 	<h1>Soy la página de Inicio</h1>
 </body>

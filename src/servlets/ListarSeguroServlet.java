@@ -26,6 +26,7 @@ public class ListarSeguroServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		if(request.getParameter("list") != null) {
 			SeguroDao segDao = new SeguroDaoImpl();
 			ArrayList<Seguro> sgList = segDao.listar();
