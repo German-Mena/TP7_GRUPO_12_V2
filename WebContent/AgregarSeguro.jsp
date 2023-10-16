@@ -18,8 +18,8 @@
 		<h2>Agregar Seguros</h2>
 		<table>
 		<tr><th>Id seguro </th>
-		<th><%int nuevoid=0;
-				if(request.getAttribute("valorid")!=null){
+		<th><%!int nuevoid=0; %>
+				<%if(request.getAttribute("valorid")!=null){
 					nuevoid=(int)request.getAttribute("valorid");%>
 					<%= nuevoid %>
 				<%}%>

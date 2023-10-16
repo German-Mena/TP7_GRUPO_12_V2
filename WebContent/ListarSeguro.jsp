@@ -16,8 +16,8 @@
 </head>
 <body>
 <a href="Inicio.jsp">Inicio</a>
-<a href="AgregarSeguro.jsp">Agregar</a>
-<a href="ListarSeguro.jsp">Listar</a>
+<a href="AgregarSeguro.jsp">Agregar Seguros</a>
+<a href="ListarSeguro.jsp">Listar Seguros</a>
 
 <% ArrayList<Seguro> listaSeguros = null;
 	if(request.getAttribute("listComplete") != null){
