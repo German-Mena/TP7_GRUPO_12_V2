@@ -66,8 +66,7 @@ public class AgregarSeguroServlet extends HttpServlet {
 			s.setCostoContratacion(Integer.parseInt(request.getParameter("txtcostocontratacion").toString()));
 			s.setDescripcion(request.getParameter("txtdescripcion").toString());
 			s.setIdSeguro(Integer.parseInt(request.getParameter("idUsuario").toString()));
-			//ts.setIdTipoSeguro(Integer.parseInt(request.getParameter("idSeguro").toString()));
-			ts.setIdTipoSeguro(1);
+			ts.setIdTipoSeguro(Integer.parseInt(request.getParameter("Seguro").toString()));
 			s.setTipoSeguro(ts);
 			
 			SeguroDao segDao = new SeguroDaoImpl();

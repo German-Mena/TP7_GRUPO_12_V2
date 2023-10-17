@@ -34,10 +34,10 @@
 			<tr> <th>Descripcion</th> <th><input type="text" name="txtdescripcion" required></th></tr>
 			
 			<tr> <th>Tipo de seguro</th>
-			<th><select name="Seguro">
+			<th><select name="Seguro" id="Seguro">
 				<%TipoSeguroNegocio tsNegocio=new TipoSeguroNegocioImpl();
 						for(TipoSeguro tipo: tsNegocio.listar()){%>
-						<br><option value="<%tipo.getIdTipoSeguro();%>" ><%=tipo.getDescripcion()%></option></br>
+						<option value="<%=tipo.getIdTipoSeguro()%>" ><%=tipo.getDescripcion()%></option>
 						<%}%>
 			</th></tr>
 			<tr> <th>Costo de contratacion</th> <th><input type="number" name="txtcostocontratacion" min="1" required></th></tr>
